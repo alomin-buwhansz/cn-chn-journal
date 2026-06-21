@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯 · 赛事信息与资源</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9fafb;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #475569;
+            max-width: 600px;
+        }
+
+        .section-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            color: #0f172a;
+            border-left: 3px solid #2563eb;
+            padding-left: 0.75rem;
+            margin: 2.5rem 0 1.25rem 0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.5rem 1.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+            border: 1px solid #e9edf2;
+            transition: box-shadow 0.15s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+
+        .card p {
+            font-size: 0.875rem;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        .audience-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .audience-list li {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 40px;
+            padding: 0.3rem 1rem;
+            font-size: 0.875rem;
+            color: #1e293b;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+
+        .link-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.5rem 1.5rem 1.75rem;
+            border: 1px solid #edf2f7;
+            margin-top: 2rem;
+        }
+
+        .link-section p {
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .link-section a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.1s;
+        }
+
+        .link-section a:hover {
+            border-bottom-color: #2563eb;
+        }
+
+        .faq-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.15rem;
+            color: #0f172a;
+        }
+
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-left: 0.1rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            text-align: center;
+            margin-top: 3rem;
+            letter-spacing: 0.01em;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1.25rem 1rem;
+            }
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- hero -->
+    <div class="hero">
+        <h1>世界杯 · 赛程与深度信息</h1>
+        <p>围绕全球最高级别足球赛事，提供赛事结构、历史背景、观赛指引与数据参考。内容持续更新，适合爱好者与研究者。</p>
+    </div>
+
+    <!-- 核心用途卡片 -->
+    <div class="section-title">赛事信息模块</div>
+    <div class="card-grid">
+        <div class="card">
+            <h3>赛程与分组</h3>
+            <p>完整赛历、小组对阵、淘汰赛路径及举办场馆。支持按轮次与日期筛选，方便规划观看时间。</p>
+        </div>
+        <div class="card">
+            <h3>球队 & 球员数据</h3>
+            <p>参赛队伍阵容、出场统计、进球与助攻排行。数据源经过校对，保持与官方同步。</p>
+        </div>
+        <div class="card">
+            <h3>历史与纪录</h3>
+            <p>历届冠军、经典比赛、射手榜演变。通过时间线梳理赛事演变与标志性瞬间。</p>
+        </div>
+        <div class="card">
+            <h3>规则与解读</h3>
+            <p>最新竞赛规则、VAR 应用说明、积分与晋级逻辑。辅助深度观赛与内容分析。</p>
+        </div>
+    </div>
+
+    <!-- 适合人群 -->
+    <div class="section-title">适合哪些人群</div>
+    <ul class="audience-list">
+        <li>⚽ 足球爱好者</li>
+        <li>📊 数据分析与体育研究者</li>
+        <li>📅 赛事日程规划者</li>
+        <li>📚 体育媒体与内容创作者</li>
+        <li>🎯 刚接触世界杯的新观众</li>
+        <li>🔄 需要快速查阅规则与纪录的球迷</li>
+    </ul>
+
+    <!-- 自然链接段落 -->
+    <div class="link-section">
+        <p>
+            若希望获取更完整的赛程、球队档案及历史数据库，可查阅<a href="https://cn-chn-worldcup.com">世界杯</a>专题页面。该页面聚合了从预选赛到决赛圈的核心信息，并持续根据赛事进程补充内容，适合作为信息参考起点。
+        </p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section-title">常见问题摘要</div>
+    <div class="faq-item">
+        <strong>赛事周期与举办时间？</strong>
+        <p>世界杯决赛圈通常在夏季或冬季举办（视主办国气候而定），小组赛持续约两周，淘汰赛约一周。准确日期以当届赛程为准。</p>
+    </div>
+    <div class="faq-item">
+        <strong>哪里可以查看最新的比赛结果？</strong>
+        <p>可借助上述专题页面获取实时比分、赛后统计与积分变化。数据更新有短暂延迟，但覆盖全部场次。</p>
+    </div>
+    <div class="faq-item">
+        <strong>新手如何快速了解赛制？</strong>
+        <p>建议先阅读小组赛积分规则、淘汰赛加时与点球机制，再结合对阵图理解晋级路径。专题页面中有规则解读板块。</p>
+    </div>
+
+    <hr>
+    <div class="footer-note">
+        信息卡片式索引 · 聚焦世界杯主题内容
+    </div>
+</div>
+</body>
+</html>
