@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纬来体育 · 产品与服务说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9fafb;
+            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 720px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+            padding: 2.5rem 2rem;
+        }
+
+        @media (max-width: 540px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .page {
+                padding: 1.75rem 1.25rem;
+                border-radius: 20px;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            line-height: 1.25;
+            margin-bottom: 0.25rem;
+        }
+
+        .subhead {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            border-left: 3px solid #3b82f6;
+            padding-left: 1rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 2.2rem;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+            color: #0f172a;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.4rem;
+            color: #1e293b;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #334155;
+        }
+
+        .accent-link {
+            color: #1d4ed8;
+            text-decoration: none;
+            border-bottom: 1px solid #cbd5e1;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .accent-link:hover {
+            color: #0f3b9e;
+            border-bottom-color: #0f3b9e;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        @media (max-width: 480px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .feature-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 1rem 1.2rem;
+            border: 1px solid #e9edf2;
+        }
+
+        .feature-card h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: #0f172a;
+        }
+
+        .feature-card p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+            color: #475569;
+        }
+
+        .scenario-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .scenario-list li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.92rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .scenario-list li:last-child {
+            border-bottom: none;
+        }
+
+        .scenario-list li::before {
+            content: "→";
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
+        .notice-box {
+            background: #fef9ee;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem 1.2rem;
+            border-radius: 12px;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .notice-box p {
+            margin-bottom: 0.2rem;
+            font-size: 0.9rem;
+            color: #5b4a1e;
+        }
+
+        .faq-summary {
+            margin-top: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: #0f172a;
+        }
+
+        .faq-answer {
+            font-size: 0.88rem;
+            color: #475569;
+            margin-top: 0.1rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e9edf2;
+            margin: 2rem 0 1rem;
+        }
+
+        .meta-note {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>纬来体育</h1>
+    <div class="subhead">体育内容聚合 · 稳定访问 · 信息透明</div>
+
+    <p>
+        <a href="https://webs-weilaisports.com" class="accent-link">纬来体育</a> 
+        是一个面向中文用户的体育信息与赛事相关内容平台。站点聚合了多类体育项目的数据、赛程、新闻以及深度观察，旨在为用户提供清晰、可检索的体育资讯参考。以下从功能摘要、核心特点、使用场景及可靠性说明四个维度展开介绍。
+    </p>
+
+    <h2>产品摘要</h2>
+    <p>
+        平台覆盖足球、篮球、网球、电竞及综合运动等主流领域，信息源经人工与自动化结合筛选，保持更新。界面以数据为导向，赛程、比分、排名等模块均采用结构化呈现，减少无效信息干扰。用户可通过关键词或分类快速定位所需内容，适合赛前预习、赛中追踪、赛后复盘等连续场景。
+    </p>
+
+    <h2>核心亮点</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h4>多维度数据</h4>
+            <p>赛程、实时比分、积分榜、球员统计，按联赛/赛事分类，支持交叉筛选。</p>
+        </div>
+        <div class="feature-card">
+            <h4>文本优先</h4>
+            <p>以简明文字和表格传递信息，降低加载负担，适配低带宽或移动端环境。</p>
+        </div>
+        <div class="feature-card">
+            <h4>更新节奏</h4>
+            <p>重要赛事期间保持较高更新频次，涵盖季前、常规赛及季后赛关键节点。</p>
+        </div>
+        <div class="feature-card">
+            <h4>无过度商业化</h4>
+            <p>页面无弹窗干扰，广告位克制，内容与推广区域明确分离，阅读体验干净。</p>
+        </div>
+    </div>
+
+    <h2>使用建议</h2>
+    <p>以下场景下，通过 <a href="https://webs-weilaisports.com" class="accent-link">纬来体育</a> 获取信息较为高效：</p>
+    <ul class="scenario-list">
+        <li>赛前快速查看对阵双方近期战绩、伤停及历史交锋数据。</li>
+        <li>比赛进行时关注实时比分与关键事件文字摘要。</li>
+        <li>赛后查阅完整技术统计、积分变化及专家短评。</li>
+        <li>追踪特定联赛或球队的长期排名走势与赛程日历。</li>
+    </ul>
+    <p>建议将站点加入浏览器书签，或通过 RSS 订阅方式获取更新提醒（如平台提供）。移动端浏览器可直接访问，无需安装额外应用。</p>
+
+    <h2>可信与克制说明</h2>
+    <p>
+        本站数据来源于公开赛事信息及合作数据接口，不提供任何形式的博彩、非法投注或内幕交易建议。所有内容仅供参考，不构成决策依据。平台不存储用户隐私数据，不设置强制注册或付费墙。如遇链接失效或数据异常，可通过站点内联系渠道反馈，团队会在工作时段内核实处理。
+    </p>
+    <div class="notice-box">
+        <p><strong>提示：</strong> 体育赛事信息具有时效性，平台尽力保证准确，但无法完全避免延迟或人为错误。关键决策请以赛事官方或授权机构发布的信息为准。</p>
+    </div>
+
+    <h2>常见问题摘要</h2>
+    <div class="faq-summary">
+        <div class="faq-item">
+            <div class="faq-question">是否需要注册或付费？</div>
+            <div class="faq-answer">不需要。当前所有公开内容均可直接浏览，无隐藏收费模块。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">数据更新频率如何？</div>
+            <div class="faq-answer">主流联赛进行期间，赛程、比分实时更新；其他内容每日至少同步一次。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">是否包含视频或直播？</div>
+            <div class="faq-answer">平台以文字和数据为主，不提供流媒体直播服务。部分新闻可能内嵌外部视频引用。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">移动端访问体验如何？</div>
+            <div class="faq-answer">页面采用响应式设计，在手机和平板设备上可正常阅读，表格自动适配屏幕宽度。</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p style="font-size: 0.9rem; color: #64748b;">
+        若您对某一联赛或运动项目有深入的信息需求，可直接搜索站内相关内容。<a href="https://webs-weilaisports.com" class="accent-link">纬来体育</a> 
+        将持续优化数据粒度与访问流畅度，为体育爱好者提供可靠的参考工具。
+    </p>
+    <div class="meta-note">
+        — 产品说明页 · 内容基于公开信息整理 —
+    </div>
+</div>
+</body>
+</html>
